@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaEnvelope,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -46,16 +47,19 @@ const Footer = () => {
             </div>
             {/* Social Icons */}
             <div className="flex gap-4 text-2xl">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="https://github.com/CyberNexus-Work" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/cybernexus-work-938006376/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
                 <FaLinkedin />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors duration-200">
+              <a href="https://www.instagram.com/cybernexus.work/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors duration-200">
                 <FaInstagram />
               </a>
-              <a href="mailto:contact@cybernexus.com" className="hover:text-green-400 transition-colors duration-200">
+              <a href="https://x.com/CyberNexusWeb" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors duration-200">
+                <FaTwitter />
+              </a>
+              <a href="mailto:cybernexus05@gmail.com" className="hover:text-green-400 transition-colors duration-200">
                 <FaEnvelope />
               </a>
             </div>

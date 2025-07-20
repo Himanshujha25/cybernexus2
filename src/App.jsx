@@ -15,7 +15,6 @@ import TechStackSection from "./pages/sections/Tech";
 import Founder from "./pages/sections/Founder";
 import TeamSection from "./pages/sections/Team";
 import Review from "./pages/sections/Review";
-import Values from "./pages/sections/CoreValues";
 import Contact from "./pages/sections/Contact";
 // import MissionSection from "./pages/sections/Mission";
 import Footer from "./pages/sections/Footer";

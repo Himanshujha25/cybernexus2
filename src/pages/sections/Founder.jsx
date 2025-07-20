@@ -1,7 +1,7 @@
 // Founder.jsx
 import { motion } from "framer-motion";
 import { Card, CardContent, sectionVariants } from "../components/Background";
-import himanshu from "../../assets/himanhsu.jpg"; 
+import himanshu from "../../assets/himanshu2.jpg";
 
 const Founder = () => {
   return (
@@ -18,7 +18,7 @@ const Founder = () => {
         >
           <h2 className="text-5xl font-semibold text-zinc-200 mb-4">Meet the Founder</h2>
           <p className="text-gray-400 text-lg  mx-auto">
-Fueling the future of digital innovation by merging technology, creativity, and cybersecurity into seamless, scalable solutions — one line of code at a time.          </p>
+            Fueling the future of digital innovation by merging technology, creativity, and cybersecurity into seamless, scalable solutions — one line of code at a time.          </p>
         </motion.div>
 
         {/* Content */}
@@ -31,7 +31,7 @@ Fueling the future of digital innovation by merging technology, creativity, and 
         >
           {/* Left Text */}
           <div className="w-full md:w-2/3 ">
-            <Card  className="bg-zinc-900/50 border border-zinc-800">
+            <Card className="bg-zinc-900/50 border border-zinc-800">
               <CardContent>
                 <p className="text-gray-300 text-lg mb-4">
                   I’m <span className="text-blue-500 font-semibold">Himanshu</span>, founder of <span className="text-blue-500 font-semibold">CyberNexus</span> — a next-gen digital innovation hub where development meets security. My passion lies in building powerful full-stack applications with scalable, secure, and elegant architecture.
@@ -50,7 +50,7 @@ Fueling the future of digital innovation by merging technology, creativity, and 
           </div>
 
           {/* Right Image */}
-          <div className="w-60 h-60 md:w-60 md:h-60 rounded-full border-4 border-blue-900 overflow-hidden shadow-lg">
+          <div className="w-60 h-60 md:w-80 md:h-80  rounded-full border-4 border-blue-900 overflow-hidden shadow-lg hover:shadow-blue-500/30 transition-shadow duration-300 hover:scale-110">
             <img
               src={himanshu}
               alt="Founder Himanshu"

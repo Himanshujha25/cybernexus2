@@ -43,19 +43,19 @@ const WhyJoinUsSection = () => {
             <div className="absolute inset-0  z-0 pointer-events-none" />
 
             <video
-              src="/video/cybervid.mp4"
+              src="/video/main.mp4"
               type="video/mp4"
               autoPlay
               loop
               muted
               playsInline
-              className="w-full h-[400px] sm:h-[550px] md:h-[550px] object-cover rounded-2xl"
+              className="w-full h-[400px] sm:h-[550px] md:h-[500px] object-cover rounded-xl"
               style={{
-                filter: "brightness(0.5) contrast(1.1)",
+                filter: "brightness(1) contrast(1.2)",
               }}
               onLoadedMetadata={(e) => {
                 try {
-                  e.target.playbackRate = 0.95;
+                  e.target.playbackRate = 0.80;
                 } catch (err) {
                   console.error("Playback rate error:", err);
                 }
