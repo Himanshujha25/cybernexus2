@@ -66,8 +66,8 @@ const projects = [
     bg: "https://imgs.search.brave.com/RlDJwTYy6El9ES33ir0gbiWbPpOtvLZ-yBNX6bWT0qo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/dmludGFnZS1yZWNp/cGVzLXlvdXR1YmUt/Y2hhbm5lbC1hcnRf/MjMtMjE0ODkwNDEx/My5qcGc_c2VtdD1h/aXNfaHlicmlkJnc9/NzQw",
   },
   {
-    title: "TaskFlow AI",
-    desc: "Efficient task manager with Firebase login and real-time updates.",
+    title: "Attendance Tracker",
+    desc: "Efficient attendance management system with real-time updates.",
     tech: ["React", "Firebase", "Authentication", "Material UI"],
     link: "https://smart-cv-iota.vercel.app/",
     bg: "https://imgs.search.brave.com/SPsITCKjazw3NFWiLbGMVUEPWSIv-izsKWkkTnjtFnk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uaWZ0/eXBtLmNvbS9ibG9n/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzAyL0hpdmUtdGFz/ay1tYW5hZ2VtZW50/LXNvZnR3YXJlLTEw/MjR4NjA1LnBuZw",
@@ -91,7 +91,7 @@ const ProjectDashboard = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3  px-4">
         {projects.map((proj, i) => (
           <div key={i} className="bg-zinc-900 border border-zinc-800  shadow overflow-hidden flex flex-col">
             {/* Image */}

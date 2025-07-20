@@ -105,6 +105,7 @@ const Contact = () => {
         {/* Toast Container for Notifications */}
         <ToastContainer
           position="top-center"
+          className={"mt-16"}
           autoClose={3000}
           hideProgressBar={false}
           newestOnTop={false}

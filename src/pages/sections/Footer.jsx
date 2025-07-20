@@ -26,92 +26,104 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-b from-black to-gray-900 text-gray-400 px-6 pt-12 pb-20 border-t border-zinc-900">
-        <div className="max-w-7xl mx-auto space-y-14">
-          {/* Logo + Brand */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+      <footer className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-gray-400 px-6 pt-16 pb-10 border-t border-zinc-800 shadow-2xl">
+        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+          {/* Top: Logo & Socials */}
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+            {/* Logo & Brand */}
             <div className="flex items-center gap-4">
               <img
                 src="/go.png"
                 alt="CyberNexus Logo"
-                className="h-14 w-14 rounded-xl object-cover"
+                className="h-16 w-16 rounded-2xl object-cover shadow-lg border-2 border-blue-600"
               />
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-zinc-200">CyberNexus</h2>
-                <p className="text-sm mt-1 text-zinc-500">
+                <h2 className="text-3xl font-bold text-white tracking-tight">CyberNexus</h2>
+                <p className="text-base mt-1 text-blue-400 font-medium">
                   Where Development Meets Security
                 </p>
               </div>
             </div>
-
             {/* Social Icons */}
-            <div className="flex gap-3 text-2xl">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+            <div className="flex gap-4 text-2xl">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-200">
                 <FaLinkedin />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors duration-200">
                 <FaInstagram />
               </a>
-              <a href="mailto:contact@cybernexus.com" className="hover:text-white transition">
+              <a href="mailto:contact@cybernexus.com" className="hover:text-green-400 transition-colors duration-200">
                 <FaEnvelope />
               </a>
             </div>
           </div>
 
-          {/* Footer Links */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto scrollbar-hide text-sm leading-relaxed">
+          {/* Middle: Links */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-sm">
             {/* Company */}
-            <div className="shrink-0 w-fit">
-              <h4 className="text-zinc-200 text-lg font-semibold mb-1">Company</h4>
-              <ul className="">
-                <li><a href="#home" className="hover:text-white transition">About Us</a></li>
-                <li><a href="#projects" className="hover:text-white transition">Our Projects</a></li>
+            <div>
+              <h4 className="text-zinc-100 text-lg font-semibold mb-3 tracking-wide">Company</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#home" className="hover:text-blue-400 transition">About Us</a>
+                </li>
+                <li>
+                  <a href="#projects" className="hover:text-blue-400 transition">Our Projects</a>
+                </li>
               </ul>
             </div>
-
             {/* Legal */}
-            <div className="shrink-0 w-fit">
-              <h4 className="text-white text-lg font-semibold mb-1">Legal</h4>
-              <ul className="">
-                <li to="/privacy-policy"><a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-white transition">Terms & Conditions</a></li>
+            <div>
+              <h4 className="text-zinc-100 text-lg font-semibold mb-3 tracking-wide">Legal</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="/privacy-policy" className="hover:text-blue-400 transition">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="/terms" className="hover:text-blue-400 transition">Terms & Conditions</a>
+                </li>
               </ul>
             </div>
-
             {/* Support */}
-            <div className="shrink-0 w-fit">
-              <h4 className="text-white text-lg font-semibold mb-1">Support</h4>
-              <ul className="">
-                <li><a href="#contact" className="hover:text-white transition">Help Center</a></li>
-                <li><a href="#faq" className="hover:text-white transition">FAQs</a></li>
+            <div>
+              <h4 className="text-zinc-100 text-lg font-semibold mb-3 tracking-wide">Support</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#contact" className="hover:text-blue-400 transition">Help Center</a>
+                </li>
+                <li>
+                  <a href="mailto:contact@cybernexus.com" className="hover:text-blue-400 transition">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>
 
-          <hr className="border-gray-800" />
-
-          <div className="text-center pt-4 text-sm text-zinc-500">
-            <p>
-              © {new Date().getFullYear()} <strong>CyberNexus Tech Collective</strong>. All rights reserved.
-            </p>
-            <p className="mt-1">Built with ❤️ by full-stack engineers & creators.</p>
+          {/* Bottom: Copyright */}
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 border-t border-zinc-800 pt-6">
+            <div className="text-center md:text-left text-zinc-500 text-sm">
+              © {new Date().getFullYear()} <span className="font-semibold text-zinc-300">CyberNexus Tech Collective</span>. All rights reserved.
+            </div>
+            <div className="text-center md:text-right text-zinc-500 text-xs">
+              Built with <span className="text-red-400">❤️</span> by full-stack engineers & creators.
+            </div>
           </div>
         </div>
       </footer>
 
-      {/* Back*/}
+      {/* Back to Top Button */}
       <AnimatePresence>
         {showBackToTop && (
           <motion.button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl z-50"
-            initial={{ opacity: 0, scale: 0 }}
+            className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-2xl z-50 border-4 border-white/10"
+            initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
-            whileHover={{ y: -4 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            whileHover={{ y: -4, scale: 1.08 }}
+            aria-label="Back to top"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
